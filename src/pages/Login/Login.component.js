@@ -1,13 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import intl from 'react-intl-universal';
-import styles from './css/styles.css';
+import './css/styles.css';
 
 const LoginComp = ({ login }) => (
   <div>
-    <h2>{intl.get('menu/login').d('Login')}</h2>
-    <p> </p>
-    <div className={styles.loginWrapper}>
+    <div className="loginWrapper">
       <section className="loginBgContainer"></section>
       <section className="loginContainer">
           <p> Username</p>
