@@ -9,6 +9,7 @@ import locale from './data/locale';
 import home from '../pages/Home/data';
 import about from '../pages/About/data';
 import topics from '../pages/Topics/data';
+import login from '../pages/Login/data';
 
 export default combineReducers({
   themes,
@@ -17,4 +18,5 @@ export default combineReducers({
   home,
   about,
   topics,
+  login
 });
