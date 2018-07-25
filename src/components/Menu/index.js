@@ -1,13 +1,14 @@
-import React,{ PropTypes } from 'react';
-import ReactDOM from 'react-dom';
-import { Link } from 'react-router';
+import React from 'react';
 
 import MenuWrapper from './styled';
 
 export default function Menu() {
     return (
         <MenuWrapper>
-           dfgdfgsdf
+           <MenuWrapper.MenuWrapperList>
+               <MenuWrapper.MenuList> <MenuWrapper.MenuItem href="/home"> Dashboard </MenuWrapper.MenuItem> </MenuWrapper.MenuList>
+               <MenuWrapper.MenuList> <MenuWrapper.MenuItem href="/"> Revenue </MenuWrapper.MenuItem> </MenuWrapper.MenuList>
+           </MenuWrapper.MenuWrapperList>
         </MenuWrapper>
     );
 }

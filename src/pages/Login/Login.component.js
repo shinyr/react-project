@@ -3,8 +3,6 @@ import './css/styles.css';
 import history from '../../history';
 import {Redirect} from "react-router-dom";
 
-import Menu from '../../components/Menu/index'; 
-
 class LoginComp extends React.Component {
     constructor(props) {
         super(props);
@@ -60,7 +58,6 @@ class LoginComp extends React.Component {
                         <button> Login </button>
                     </section>
                 </form>
-                <Menu> </Menu>
             </div>
         );
     }
