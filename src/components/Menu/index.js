@@ -4,14 +4,10 @@ import { Link } from 'react-router';
 
 import MenuWrapper from './styled';
 
-class Menu extends React.Component {
-    render () {
-      return (
+export default function Menu() {
+    return (
         <MenuWrapper>
-            dfgdfgsdf
+           dfgdfgsdf
         </MenuWrapper>
-      );
-    }
-  }
-  
-  export default Menu;
+    );
+}
