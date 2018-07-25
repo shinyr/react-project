@@ -5,17 +5,17 @@ import {
   Switch,
 } from 'react-router-dom';
 import Home from './pages/Home';
-import About from './pages/About';
-import Topics from './pages/Topics';
-import Page404 from './pages/Page404';
+import Login from './pages/Login';
+import history from './history';
 
 class App extends React.Component {
   render() {
     return (
-          <Router>
+          <Router history={history}>
             <div>
               <Switch>
-                <Route exact path="/" component={Home} />
+                <Route exact path="/home" component={Home} />
+                <Route path="/" component={Login} />
               </Switch>
             </div>
           </Router>
