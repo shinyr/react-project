@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
+import Revenue from './pages/Revenue';
 import history from './history';
 
 class App extends React.Component {
@@ -14,8 +15,9 @@ class App extends React.Component {
           <Router history={history}>
             <div>
               <Switch>
-                <Route exact path="/home" component={Home} />
-                <Route path="/" component={Login} />
+                <Route exact path="/" component={Login} /> 
+                <Route path="/home" component={Home} />
+                <Route path="/revenue" component={Revenue} />
               </Switch>
             </div>
           </Router>
