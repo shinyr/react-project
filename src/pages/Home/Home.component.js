@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import intl from 'react-intl-universal';
 
+import Menu from '../../components/Menu/index';  
+
 const HomeComp = ({ home }) => (
   <div>
-    <h2>{intl.get('menu/home').d('Home')}</h2>
-    <p>{home}</p>
-  </div>
+    <Menu> </Menu>
+  </div> 
 );
 
 HomeComp.propTypes = {

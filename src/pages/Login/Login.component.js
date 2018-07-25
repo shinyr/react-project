@@ -3,7 +3,6 @@ import './css/styles.css';
 import history from '../../history';
 import {Redirect} from "react-router-dom";
 
-
 class LoginComp extends React.Component {
     constructor(props) {
         super(props);
