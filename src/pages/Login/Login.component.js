@@ -45,7 +45,7 @@ class LoginComp extends React.Component {
         const { login } = this.props;
         const { username, password } = this.state;
         if (login.msg == "success") {
-            return <Redirect to='/'/>;
+            return <Redirect to='/home'/>;
         }
         return(
             <div>
