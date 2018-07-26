@@ -1,6 +1,6 @@
 import React from 'react';
 import history from '../../history';
-import loginMainWrapper from './styled';
+import LoginWrapper from './styled';
 
 class LoginComp extends React.Component {
     constructor(props) {
@@ -46,16 +46,16 @@ class LoginComp extends React.Component {
         // }
         return(
             <div>
-                <loginMainWrapper.loginWrapper onSubmit={this.handleSubmit}>
-                    <loginMainWrapper.loginBgContainer></loginMainWrapper.loginBgContainer>
-                    <loginMainWrapper.loginContainer>
-                        <loginMainWrapper.loginContainerP> Username</loginMainWrapper.loginContainerP>
-                        <loginMainWrapper.loginContainerInput type="text" name="username" value={username} placeholder="Username" onChange={this.handleChange}/>
-                        <loginMainWrapper.loginContainerP> Password</loginMainWrapper.loginContainerP>
-                        <loginMainWrapper.loginContainerInput type="password" name="password" value={password} placeholder="Password" onChange={this.handleChange}/>
-                        <loginMainWrapper.loginContainerButton> Login </loginMainWrapper.loginContainerButton>
-                    </loginMainWrapper.loginContainer>
-                </loginMainWrapper.loginWrapper>
+                <LoginWrapper>
+                    <LoginWrapper.LoginBgContainer></LoginWrapper.LoginBgContainer>
+                    <LoginWrapper.LoginContainer>
+                        <p> Username</p>
+                        <input type="text" name="username" value={username} placeholder="Username" onChange={this.handleChange}/>
+                        <p> Password</p>
+                        <input type="password" name="password" value={password} placeholder="Password" onChange={this.handleChange}/>
+                        <button onClick={this.handleSubmit}> Login </button>
+                    </LoginWrapper.LoginContainer>
+                </LoginWrapper>
             </div>
         );
     }
