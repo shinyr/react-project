@@ -8,36 +8,36 @@ const ContentWrapper = styled.section`
     background: #F1F3F6;
 `;
 
-const Header = styled.header`
-    padding: 7px 20px;
-    width:100%;
-    background: #fff;
-    color: #5F5F5F;
-    box-sizing: border-box;
-    text-align: right;
-    ul{
-        display :inline-block;
-        padding: 0px;
-        margin: 0px;
-        list-style: none;
-        cursor: pointer;
-        position : relative;
-        li{
-            display: none;
-            a{ 
-                color: #000;
-                text-decoration: none;
-            }
-        }
-    }
-    ul:hover li{
-        display : block;
-        position: absolute;
-        background: #ccc;
-        padding: 10px 15px;
-        right: -10px;
-    }
-`;
+// const Header = styled.header`
+//     padding: 7px 20px;
+//     width:100%;
+//     background: #fff;
+//     color: #5F5F5F;
+//     box-sizing: border-box;
+//     text-align: right;
+//     ul{
+//         display :inline-block;
+//         padding: 0px;
+//         margin: 0px;
+//         list-style: none;
+//         cursor: pointer;
+//         position : relative;
+//         li{
+//             display: none;
+//             a{ 
+//                 color: #000;
+//                 text-decoration: none;
+//             }
+//         }
+//     }
+//     ul:hover li{
+//         display : block;
+//         position: absolute;
+//         background: #ccc;
+//         padding: 10px 15px;
+//         right: -10px;
+//     }
+// `;
 
 const ContentContainer = styled.div`
     padding: 10px;
