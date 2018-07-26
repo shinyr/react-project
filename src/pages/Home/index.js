@@ -3,7 +3,6 @@ import Loadable from 'react-loadable';
 
 import ComponentLoading from '../../components/ComponentLoading';
 
-node_modules/font-awesome/css/font-awesome.min.css
 const LoadableComponent = Loadable({
   loader: () => import('./Home.container'),
   loading: ComponentLoading,

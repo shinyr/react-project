@@ -26,12 +26,12 @@ class HomeComp extends React.Component{
       <div>
         <Menu> </Menu>
         <ContentWrapper>
-          {/* <ContentWrapper.Header>
+          <ContentWrapper.Header>
               <ul>
-                <p>Hello <b>{this.props.login.uname}</b> <i class="fa fa-sort-desc" aria-hidden="true"></i> </p>
+                <p>Hello <b>{this.props.login.uname}</b> </p>
                 <li><a href="/"> Logout </a></li>
               </ul>               
-          </ContentWrapper.Header> */}
+          </ContentWrapper.Header>
           <ContentWrapper.ContentContainer>
             <h1> Dashboard </h1>
             <ContentWrapper.ChartWrapper>
