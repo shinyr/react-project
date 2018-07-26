@@ -1,7 +1,6 @@
 import React from 'react';
-import './css/styles.css';
 import history from '../../history';
-import {Redirect} from "react-router-dom";
+import loginMainWrapper from './styled';
 
 class LoginComp extends React.Component {
     constructor(props) {
@@ -20,8 +19,7 @@ class LoginComp extends React.Component {
 
     componentWillReceiveProps(nextProps){
         if(nextProps.login.msg == "success"){
-            // console.log('login success');
-            // history.push('/');
+             nextProps.history.push('/home');
 
         }else{
             this.setState({errorMsg: nextProps.login.msg})
@@ -43,21 +41,21 @@ class LoginComp extends React.Component {
     render() {
         const { login } = this.props;
         const { username, password } = this.state;
-        if (login.msg == "success") {
-            return <Redirect to='/home'/>;
-        }
+        // if (login.msg == "success") {
+        //     return <Redirect to='/home'/>;
+        // }
         return(
             <div>
-                <form className="loginWrapper" onSubmit={this.handleSubmit}>
-                    <section className="loginBgContainer"></section>
-                    <section className="loginContainer">
-                        <p> Username</p>
-                        <input type="text" name="username" value={username} placeholder="Username" onChange={this.handleChange}/>
-                        <p> Password</p>
-                        <input type="password" name="password" value={password} placeholder="Password" onChange={this.handleChange}/>
-                        <button> Login </button>
-                    </section>
-                </form>
+                <loginMainWrapper.loginWrapper onSubmit={this.handleSubmit}>
+                    <loginMainWrapper.loginBgContainer></loginMainWrapper.loginBgContainer>
+                    <loginMainWrapper.loginContainer>
+                        <loginMainWrapper.loginContainerP> Username</loginMainWrapper.loginContainerP>
+                        <loginMainWrapper.loginContainerInput type="text" name="username" value={username} placeholder="Username" onChange={this.handleChange}/>
+                        <loginMainWrapper.loginContainerP> Password</loginMainWrapper.loginContainerP>
+                        <loginMainWrapper.loginContainerInput type="password" name="password" value={password} placeholder="Password" onChange={this.handleChange}/>
+                        <loginMainWrapper.loginContainerButton> Login </loginMainWrapper.loginContainerButton>
+                    </loginMainWrapper.loginContainer>
+                </loginMainWrapper.loginWrapper>
             </div>
         );
     }
