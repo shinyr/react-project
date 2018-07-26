@@ -26,7 +26,12 @@ class HomeComp extends React.Component{
       <div>
         <Menu> </Menu>
         <ContentWrapper>
-          <ContentWrapper.Header> <p>Hello <b>{this.props.login.uname}</b> </p></ContentWrapper.Header>
+          <ContentWrapper.Header>
+              <ul>
+                <p>Hello <b>{this.props.login.uname}</b> <i class="fa fa-sort-desc" aria-hidden="true"></i> </p>
+                <li><a href="/"> Logout </a></li>
+              </ul>               
+          </ContentWrapper.Header>
           <ContentWrapper.ContentContainer>
             <h1> Dashboard </h1>
             <ContentWrapper.ChartWrapper>
@@ -50,7 +55,7 @@ class HomeComp extends React.Component{
                           return(
                             <tr key={index}>
                                 <td>{rev.company}</td>
-                                <td>{rev.revenue}</td>
+                                <td>$ {rev.revenue}</td>
                             </tr>
                           )
                         })

@@ -2,19 +2,19 @@
     "revenue": [
         {
             "company": "Company1",
-            "revenue": "$100"
+            "revenue": "100"
         },
         {
             "company": "Company2",
-            "revenue": "$200"
+            "revenue": "200"
         },
         {
             "company": "Company3",
-            "revenue": "$600"
+            "revenue": "600"
         },
         {
             "company": "Company4",
-            "revenue": "$400"
+            "revenue": "400"
         }
     ]
 }
