@@ -1,18 +1,22 @@
 {
     "revenue": [
         {
+            "id": 1,
             "company": "Company1",
             "revenue": "$100"
         },
         {
+            "id": 2,
             "company": "Company2",
             "revenue": "$200"
         },
         {
+            "id": 3,
             "company": "Company3",
             "revenue": "$600"
         },
         {
+            "id": 4,
             "company": "Company4",
             "revenue": "$400"
         }

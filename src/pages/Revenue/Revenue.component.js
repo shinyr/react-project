@@ -3,6 +3,7 @@ import { revenueActions } from './Revenue.action';
 import Menu from '../../components/Menu/index';
 import TableWrapper from '../../globalstyles.js';
 import RevenueTableWrapper from './styled';
+import history from 'history';
 class RevenueComp extends React.Component {
     constructor(props) {
         super(props);
@@ -15,6 +16,12 @@ class RevenueComp extends React.Component {
         var revenueData = revenueActions.getAllRevenue();
         this.setState({data: revenueData });
     }
+
+    showCompanyRevenue (id) {
+        console.log(this.props);
+        this.props.history.push(`/revenue/${id}`);
+    }
+
     render() {
         let {data} = this.state;
         return (
@@ -31,10 +38,10 @@ class RevenueComp extends React.Component {
                     </thead>
                     <tbody>
                             {
-                                data.revenue && data.revenue.map((rev, index) => {
+                                data.revenue && data.revenue.map((rev) => {
                                     return(
-                                        <tr key={index}>
-                                            <td>{rev.company}</td>
+                                        <tr key={rev.id}>
+                                            <RevenueTableWrapper.RevenueTableCol onClick={() => this.showCompanyRevenue(rev.id)}>{rev.company}</RevenueTableWrapper.RevenueTableCol>
                                             <td>{rev.revenue}</td>
                                         </tr>
                                     )

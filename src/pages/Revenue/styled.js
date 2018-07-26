@@ -5,4 +5,10 @@ const RevenueTableWrapper = styled.section`
     float:left;
 `;
 
+const RevenueTableCol = styled.td`
+    cursor: pointer;
+    text-decoration: underline;
+`;
+
+RevenueTableWrapper.RevenueTableCol = RevenueTableCol;
 export {RevenueTableWrapper as default} ;
