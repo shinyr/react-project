@@ -1,0 +1,20 @@
+{
+    "revenue": [
+        {
+            "company": "Company1",
+            "revenue": "$100"
+        },
+        {
+            "company": "Company2",
+            "revenue": "$200"
+        },
+        {
+            "company": "Company3",
+            "revenue": "$600"
+        },
+        {
+            "company": "Company4",
+            "revenue": "$400"
+        }
+    ]
+}

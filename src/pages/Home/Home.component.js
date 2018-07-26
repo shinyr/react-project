@@ -1,18 +1,26 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import TableWrapper from '../../globalstyles';
 import ContentWrapper from './styled';
+import { loginRevenueActions } from './Home.action';
 
 import Menu from '../../components/Menu/index';  
 
 class HomeComp extends React.Component{
   constructor(props){
     super(props);
+    this.state = {
+      data: {}
+    }
   }
-componentDidMount(){
 
-}
+  componentDidMount () {
+    var revenueData = loginRevenueActions.getAllRevenue();
+    this.setState({data: revenueData });
+  }
+
 
   render(){
+    let {data} = this.state;
     return(
       <div>
         <Menu> </Menu>
@@ -23,9 +31,29 @@ componentDidMount(){
             <ContentWrapper.ChartWrapper>
                <ContentWrapper.ChartContainer></ContentWrapper.ChartContainer>
             </ContentWrapper.ChartWrapper>
-            <ContentWrapper.TableWrapper>
-                
-            </ContentWrapper.TableWrapper>
+            <TableWrapper>
+              <h1> Company Revenue</h1>
+                <table>
+                  <thead>
+                    <tr>
+                      <th> Company Name </th>
+                      <th> Revenue </th>
+                    </tr>  
+                  </thead>
+                  <tbody>
+                  {
+                    data.revenue && data.revenue.map((rev, index) => {
+                      return(
+                        <tr key={index}>
+                            <td>{rev.company}</td>
+                            <td>{rev.revenue}</td>
+                        </tr>
+                      )
+                    })
+                  }
+                  </tbody>
+                </table>
+            </TableWrapper>
           </ContentWrapper.ContentContainer>  
         </ContentWrapper>
       </div> 
@@ -33,8 +61,5 @@ componentDidMount(){
   }
 }
 
-// HomeComp.propTypes = {
-//   home: PropTypes.string.isRequired,
-// };
 
 export { HomeComp as default };
