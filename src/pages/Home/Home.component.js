@@ -4,6 +4,7 @@ import ContentWrapper from './styled';
 import { loginRevenueActions } from './Home.action';
 
 import Menu from '../../components/Menu/index';  
+import RevenueChart from '../../components/RevenueChart/index';
 
 class HomeComp extends React.Component{
   constructor(props){
