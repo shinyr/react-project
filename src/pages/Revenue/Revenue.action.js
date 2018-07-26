@@ -1,8 +1,8 @@
 import { revenueService } from './Revenue.service'
 export const revenueActions = {
-    getAllRevenue
+    getAllCompany
 }
 
-export function getAllRevenue() {
+export function getAllCompany() {
     return revenueService.getAllCompany();
 }

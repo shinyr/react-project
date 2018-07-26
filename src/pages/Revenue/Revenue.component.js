@@ -13,7 +13,7 @@ class RevenueComp extends React.Component {
     }
 
     componentDidMount() {
-        var revenueData = revenueActions.getAllRevenue();
+        var revenueData = revenueActions.getAllCompany();
         this.setState({ data: revenueData });
     }
 
