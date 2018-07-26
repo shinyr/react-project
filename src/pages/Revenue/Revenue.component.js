@@ -1,7 +1,8 @@
 import React from 'react';
-import './css/style.css';
 import { revenueActions } from './Revenue.action';
 import Menu from '../../components/Menu/index';
+import TableWrapper from '../../globalstyles.js';
+import RevenueTableWrapper from './styled';
 class RevenueComp extends React.Component {
     constructor(props) {
         super(props);
@@ -19,6 +20,8 @@ class RevenueComp extends React.Component {
         return (
             <div>
                 <Menu></Menu>
+                <RevenueTableWrapper>
+                <TableWrapper>
                  <table>
                     <thead>
                         <tr>
@@ -38,7 +41,9 @@ class RevenueComp extends React.Component {
                                 })
                             }
                     </tbody>
-                </table> 
+                </table>
+                </TableWrapper>
+                </RevenueTableWrapper>
             </div>
         );
     }

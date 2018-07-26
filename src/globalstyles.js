@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const TableWrapper = styled.section`
-    width: 40%;
+    width:100%;
     float: left;
     padding: 20px;
     box-sizing: border-box;
