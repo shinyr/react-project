@@ -20,7 +20,12 @@ componentDidMount(){
           <ContentWrapper.Header> <p>Hello <b>{this.props.login.uname}</b> </p></ContentWrapper.Header>
           <ContentWrapper.ContentContainer>
             <h1> Dashboard </h1>
-            
+            <ContentWrapper.ChartWrapper>
+               <ContentWrapper.ChartContainer></ContentWrapper.ChartContainer>
+            </ContentWrapper.ChartWrapper>
+            <ContentWrapper.TableWrapper>
+                
+            </ContentWrapper.TableWrapper>
           </ContentWrapper.ContentContainer>  
         </ContentWrapper>
       </div> 

@@ -25,18 +25,31 @@ const ContentContainer = styled.div`
 `;
 
 const ChartWrapper = styled.section`
-    width: 40%;
+    width: 60%;
     height: 300px;
     float: left;
     padding: 20px;
+    box-sizing: border-box;
 `;
 
 const ChartContainer = styled.div`
     background : #fff;
+    height: 100%;
+`;
+
+const TableWrapper = styled.section`
+    width: 40%;
+    height: 300px;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
 `;
 
  
 ContentWrapper.Header = Header;
 ContentWrapper.ContentContainer = ContentContainer;
+ContentWrapper.ChartContainer = ChartContainer;
+ContentWrapper.ChartWrapper= ChartWrapper;
+ContentWrapper.TableWrapper = TableWrapper;
 
 export { ContentWrapper as default };
