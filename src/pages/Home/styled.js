@@ -36,10 +36,16 @@ const ChartContainer = styled.div`
     background : #fff;
     height: 100%;
 `;
+
+const TableConatiner = styled.section`
+    width:40%;
+    float: left;
+`;
  
 ContentWrapper.Header = Header;
 ContentWrapper.ContentContainer = ContentContainer;
 ContentWrapper.ChartContainer = ChartContainer;
 ContentWrapper.ChartWrapper= ChartWrapper;
+ContentWrapper.TableConatiner = TableConatiner;
 
 export { ContentWrapper as default };

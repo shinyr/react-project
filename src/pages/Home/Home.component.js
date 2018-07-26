@@ -29,31 +29,35 @@ class HomeComp extends React.Component{
           <ContentWrapper.ContentContainer>
             <h1> Dashboard </h1>
             <ContentWrapper.ChartWrapper>
-               <ContentWrapper.ChartContainer></ContentWrapper.ChartContainer>
+               <ContentWrapper.ChartContainer>
+                 <RevenueChart></RevenueChart>
+               </ContentWrapper.ChartContainer>
             </ContentWrapper.ChartWrapper>
-            <TableWrapper>
-              <h1> Company Revenue</h1>
-                <table>
-                  <thead>
-                    <tr>
-                      <th> Company Name </th>
-                      <th> Revenue </th>
-                    </tr>  
-                  </thead>
-                  <tbody>
-                  {
-                    data.revenue && data.revenue.map((rev, index) => {
-                      return(
-                        <tr key={index}>
-                            <td>{rev.company}</td>
-                            <td>{rev.revenue}</td>
-                        </tr>
-                      )
-                    })
-                  }
-                  </tbody>
-                </table>
-            </TableWrapper>
+            <ContentWrapper.TableConatiner>
+              <TableWrapper>
+                <h1> Company Revenue</h1>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th> Company Name </th>
+                        <th> Revenue </th>
+                      </tr>  
+                    </thead>
+                    <tbody>
+                      {
+                        data.revenue && data.revenue.map((rev, index) => {
+                          return(
+                            <tr key={index}>
+                                <td>{rev.company}</td>
+                                <td>{rev.revenue}</td>
+                            </tr>
+                          )
+                        })
+                      }
+                    </tbody>
+                  </table>
+              </TableWrapper>
+            </ContentWrapper.TableConatiner>
           </ContentWrapper.ContentContainer>  
         </ContentWrapper>
       </div> 
