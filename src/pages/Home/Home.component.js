@@ -3,7 +3,8 @@ import TableWrapper from '../../globalstyles';
 import ContentWrapper from './styled';
 import { loginRevenueActions } from './Home.action';
 
-import Menu from '../../components/Menu/index';  
+import Menu from '../../components/Menu/index'; 
+import {revOptions,chartData} from '../../components/Revenue/index'; 
 import BarChart from '../../components/BarChart/index';
 
 class HomeComp extends React.Component{
@@ -36,7 +37,7 @@ class HomeComp extends React.Component{
             <h1> Dashboard </h1>
             <ContentWrapper.ChartWrapper>
                <ContentWrapper.ChartContainer>
-                 <BarChart></BarChart>
+                 <BarChart options={revOptions} data={chartData()} />
                </ContentWrapper.ChartContainer>
             </ContentWrapper.ChartWrapper>
             <ContentWrapper.TableConatiner>
