@@ -4,7 +4,7 @@ import ContentWrapper from './styled';
 import { loginRevenueActions } from './Home.action';
 
 import Menu from '../../components/Menu/index';  
-import RevenueChart from '../../components/RevenueChart/index';
+import BarChart from '../../components/BarChart/index';
 
 class HomeComp extends React.Component{
   constructor(props){
@@ -36,7 +36,7 @@ class HomeComp extends React.Component{
             <h1> Dashboard </h1>
             <ContentWrapper.ChartWrapper>
                <ContentWrapper.ChartContainer>
-                 <RevenueChart></RevenueChart>
+                 <BarChart></BarChart>
                </ContentWrapper.ChartContainer>
             </ContentWrapper.ChartWrapper>
             <ContentWrapper.TableConatiner>
