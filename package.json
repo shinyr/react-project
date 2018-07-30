@@ -61,6 +61,7 @@
     "json-loader": "^0.5.7",
     "react-hot-loader": "^4.0.1",
     "react-router-redux": "^4.0.8",
+    "redux-persist": "^5.10.0",
     "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.2.4",
     "webpack": "^4.5.0",

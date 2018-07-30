@@ -7,6 +7,7 @@ export default (state = userInfo, action) => {
   switch (action.type) {
     case 'SUCCESS':
       console.log('success in reducer');
+      cookie.save('sessionId', action.user.sid, { path: '/' })
       return {msg: "success", uname: action.payload.username};
 
     case 'FAILURE':

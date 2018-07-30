@@ -1,7 +1,8 @@
 import React from 'react';
 import './css/styles.css';
-import history from '../../history';
 import {Redirect} from "react-router-dom";
+import { persistStore } from 'redux-persist';
+
 
 class LoginComp extends React.Component {
     constructor(props) {
@@ -13,9 +14,19 @@ class LoginComp extends React.Component {
             response: "",
             errorMsg: ""
         };
-
+        this.state = { rehydrated: false };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    componentWillMount() {
+        const opts = {
+            whitelist: ['user'] 
+        };
+
+        persistStore(this.props.store, opts, () => {
+            this.setState({ rehydrated: true });
+        });
     }
 
     componentWillReceiveProps(nextProps){
@@ -41,6 +52,9 @@ class LoginComp extends React.Component {
         this.setState({ [name]: value });
     }
     render() {
+        if (!this.state.rehydrated) {
+            return null;
+        }
         const { login } = this.props;
         const { username, password } = this.state;
         if (login.msg == "success") {
