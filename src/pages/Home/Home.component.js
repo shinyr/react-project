@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import intl from 'react-intl-universal';
 
 import Menu from '../../components/Menu/index';  
 
 const HomeComp = ({ home }) => (
   <div>
     <Menu> </Menu>
+    
   </div> 
 );
 
