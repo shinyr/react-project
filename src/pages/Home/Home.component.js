@@ -25,7 +25,7 @@ class HomeComp extends React.Component{
     let {data} = this.state;
     return(
       <div>
-        <Menu> </Menu>
+         <Menu selected ={"dashboard"} /> 
         <ContentWrapper>
           <ContentWrapper.Header>
               <ul>
@@ -71,6 +71,7 @@ class HomeComp extends React.Component{
     );
   }
 }
+>>>>>>> develop
 
 
 export { HomeComp as default };
