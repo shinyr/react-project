@@ -1,6 +1,5 @@
 import React from 'react';
 import './css/styles.css';
-import history from '../../history';
 import {Redirect} from "react-router-dom";
 
 class LoginComp extends React.Component {
@@ -20,9 +19,6 @@ class LoginComp extends React.Component {
 
     componentWillReceiveProps(nextProps){
         if(nextProps.login.msg == "success"){
-            // console.log('login success');
-            // history.push('/');
-
         }else{
             this.setState({errorMsg: nextProps.login.msg})
         }
