@@ -71,7 +71,6 @@ class HomeComp extends React.Component{
     );
   }
 }
->>>>>>> develop
 
 
 export { HomeComp as default };
