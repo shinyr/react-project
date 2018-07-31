@@ -10,11 +10,3 @@ export default (state = msg, action) => {
   }
 };
 
-/**
- * Keep actioncreators.js and contants.js within this folder.
- * I know that once we need to sharing these two files
- * with the other page folders, its gets too messy!
- *
- * Please use rematch (Redux framework) to avoid creating these files:
- * https://github.com/rematch/rematch
- */

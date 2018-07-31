@@ -25,7 +25,7 @@ class RevenueComp extends React.Component {
         let { data } = this.state;
         return (
             <div>
-                <Menu></Menu>
+                <Menu selected={"revenue"} />
                 <RevenueTableWrapper>
                     <TableWrapper>
                         <table>
