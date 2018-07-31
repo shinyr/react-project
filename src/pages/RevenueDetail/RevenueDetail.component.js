@@ -55,7 +55,7 @@ class RevenueDetailComp extends React.Component {
     let { data, startDate, endDate } = this.state;
     return (
       <div>
-        <Menu></Menu>
+        <Menu selected={"revenue"} />
         <h2>{data.company} - Revenue</h2>
         <div>
           <RevenueDetailTableWrapper.DatePickerWrapper>
