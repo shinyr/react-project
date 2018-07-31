@@ -6,7 +6,6 @@ import Menu from '../../components/Menu/index';
 const HomeComp = ({ home }) => (
   <div>
     <Menu> </Menu>
-    
   </div> 
 );
 
