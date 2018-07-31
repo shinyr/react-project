@@ -15,7 +15,7 @@ const MenuWrapperList = styled.ul`
 `; 
 
 const MenuList = styled.li`
-    background:  ${selected => active ? 'green' : '#58AD97'};
+    background: ${props => props.active ? '#2b582b' : '#58AD97'};
     padding: 10px 40px;
 `;
 
