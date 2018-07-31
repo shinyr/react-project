@@ -4,6 +4,7 @@ import HomeComp from './Home.component';
 
 const mapState = state => ({
   home: state.home,
+  login: state.login
 });
 
 const mapDispatch = () => ({});
