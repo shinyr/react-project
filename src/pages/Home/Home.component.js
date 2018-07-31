@@ -6,7 +6,7 @@ import Menu from '../../components/Menu/index';
 
 const HomeComp = ({ home }) => (
   <div>
-    <Menu> </Menu>
+    <Menu selected ={dashboard}> </Menu>
   </div> 
 );
 
